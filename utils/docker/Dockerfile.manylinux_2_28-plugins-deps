@@ -27,7 +27,7 @@ ENV OPENCV_VERSION="4.8.0"
 RUN [ "/bin/bash", "install-opencvmini.sh" ]
 
 COPY wasi-crypto/build-openssl.sh .
-ENV OpenSSL_DIR="/root/openssl-1.1.1n/openssl"
+ENV OpenSSL_DIR="/root/openssl-3.5.7/openssl"
 RUN [ "/bin/bash", "build-openssl.sh" ]
 
 COPY ffmpeg/install-ffmpeg-v7.1.1.sh .

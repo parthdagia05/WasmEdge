@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2019-2024 Second State INC
 
 set(OPENSSL_USE_STATIC_LIBS ON)
-find_package(OpenSSL REQUIRED)
+find_package(OpenSSL 3.5 REQUIRED)
 
 wasmedge_add_library(wasmedgePluginWasiCrypto
   SHARED

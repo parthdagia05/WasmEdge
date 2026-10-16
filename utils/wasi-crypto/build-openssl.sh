@@ -4,10 +4,10 @@
 
 echo "Building OpenSSL for wasi-crypto..."
 # Get OpenSSL source
-curl -s -L -O --remote-name-all https://www.openssl.org/source/openssl-1.1.1n.tar.gz
-echo "40dceb51a4f6a5275bde0e6bf20ef4b91bfc32ed57c0552e2e8e15463372b17a openssl-1.1.1n.tar.gz" | sha256sum -c
-tar -xf openssl-1.1.1n.tar.gz
-cd ./openssl-1.1.1n
+curl -s -L -O --remote-name-all https://www.openssl.org/source/openssl-3.5.7.tar.gz
+echo "a8c0d28a529ca480f9f36cf5792e2cd21984552a3c8e4aa11a24aa31aeac98e8 openssl-3.5.7.tar.gz" | sha256sum -c
+tar -xf openssl-3.5.7.tar.gz
+cd ./openssl-3.5.7
 # Configuring OpenSSL requires newer Perl.
 curl -s -L -O --remote-name-all https://www.cpan.org/src/5.0/perl-5.34.0.tar.gz
 tar -xf perl-5.34.0.tar.gz
